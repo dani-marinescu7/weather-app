@@ -1,0 +1,21 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "## Story",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodecoolGlobal/weather-app-javascript-dani-marinescu7.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/CodecoolGlobal/weather-app-javascript-dani-marinescu7/issues"
+  },
+  "homepage": "https://github.com/CodecoolGlobal/weather-app-javascript-dani-marinescu7#readme"
+}

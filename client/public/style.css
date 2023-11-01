@@ -1,0 +1,209 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+body {
+    background: #CEF;
+    background-color: rgb(244, 244, 255);
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    margin: 8px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+input {
+    background: local;
+    border: solid;
+    position: relative;
+}
+
+label {
+    position: relative;
+}
+
+#input {
+    width: 900px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 358px;
+}
+
+.widget {
+    background: linear-gradient(to bottom right, #3cc0fe 20%, #0066ff);
+    width: 900px;
+    height: 400px;
+    border-radius: 6px;
+    box-shadow: 0px 60px 80px -20px rgba(#27a5fd, 0.4);
+    position: relative;
+    overflow: hidden;
+    top: 30px;
+}
+
+.pictoBackdrop {
+    position: absolute;
+    height: 560px;
+    width: 560px;
+    border-radius: 50%;
+    background: linear-gradient(160deg, rgba(#3cc0fe, 0.7) 40%, rgba(#0066ff, 0.6));
+    right: -40px;
+    top: -90px;
+}
+
+.pictoFrame {
+    position: absolute;
+    background: #34373e;
+    border-radius: 50%;
+    box-shadow: 0px 50px 60px -20px #0066ff;
+    height: 336px;
+    width: 336px;
+    right: 80px;
+    top: 25px;
+}
+
+.pictoCloudBig {
+    position: absolute;
+    border-radius: 50%;
+    background: #aacbe6;
+    box-shadow: 20px 20px 80px -20px #aacbe6;
+    height: 218.4px;
+    width: 218.4px;
+    top: 80px;
+    right: 160px;
+}
+.pictoCloudFill {
+    position: absolute;
+    background: #aacbe6;
+    box-shadow: 0px 20px 80px -20px #aacbe6;
+    height: 117.016px;
+    width: 117.016px;
+    top: 181.5px;
+    right: 265px;
+}
+.pictoCloudSmall {
+    position: absolute;
+    border-radius: 50%;
+    background: #d2e9fa;
+    height: 152.88px;
+    width: 152.88px;
+    top: 149px;
+    right: 282px;
+}
+
+.iconCloudBig {
+    position: absolute;
+    border-radius: 50%;
+    background: #9cd0ff;
+    height: 36px;
+    width: 36px;
+    top: 200px;
+    left: 80px;
+}
+.iconCloudSmall {
+    position: absolute;
+    border-radius: 50%;
+    height: 23.4px;
+    width: 23.4px;
+    background: #d2e9fa;
+    top: 213px;
+    left: 70px;
+}
+.iconCloudFill {
+    position: absolute;
+    height: 16.38px;
+    width: 16.38px;
+    background: #9cd0ff;
+    top: 220px;
+    left: 80px;
+}
+
+.details{
+    font-family: Roboto, sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-left: 60px;
+}
+.temperature {
+    color: white;
+    font-weight: 300;
+    font-size: 10em;
+}
+.summary {
+    color: #d2e9fa;
+    font-size: 2em;
+    font-weight: 300;
+    width: 260px;
+    margin-top: -16px;
+    padding-bottom: 16px;
+    border-bottom: 2px solid #9cd0ff;
+    margin-left: 8px;
+}
+.summaryText {
+    margin: 0;
+    margin-left: 56px;
+}
+
+.favorite_city {
+    color: white;
+    font-weight: 300;
+    font-size: 0.8em;
+    position: absolute;
+    left: 320px;
+    top: 200px;
+    border: hidden;
+    background-color: inherit;
+}
+.precipitation, .wind, .location {
+    color: #d2e9fa;
+    font-size: 1.6em;
+    font-weight: 300;
+    margin-left: 8px;
+}
+.precipitation {
+    margin-top: 16px;
+}
+.wind, .location {
+    margin-top: 4px;
+}
+
+#spinner:not([hidden]) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+#spinner::after {
+    content: "";
+    width: 80px;
+    height: 80px;
+    border: 2px solid #f3f3f3;
+    border-top: 3px solid #f25a41;
+    border-radius: 100%;
+    will-change: transform;
+    animation: spin 1s infinite linear
+}
+  
+@keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
